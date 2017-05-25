@@ -1,11 +1,12 @@
-<%@ page import="org.software.Configuracion" %>
+<%@ page import="org.corhuila.General" %>
+
 <html>
 <body>
 <h2>Hello World! + JENKINS</h2>
 <p>documento midificado</p>
 <%
-	Configuracion configuracion = new Configuracion();
+	General general = new General();
 %>
-<h2><%= configuracion.getTitulo() %></h2>
+<p>Aplicacion: <%= general.getTitulo() %></p>
 </body>
 </html>
